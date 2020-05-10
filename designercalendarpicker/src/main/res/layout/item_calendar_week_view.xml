@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:weightSum="7">
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_friday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_monday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_saturday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_sunday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_thursday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_tuesday" />
+
+    <TextView
+        style="@style/CalendarPickerCell.Week"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/string_calendar_picker_wednesday" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Calendar piker Fragment -->
+    <string name="string_calendar_picker_start">Начало</string>
+    <string name="string_calendar_picker_end">Конец</string>
+    <string name="string_calendar_picker_reset">Сбросить</string>
+    <string name="string_calendar_picker_show">Показать</string>
+    <string name="string_calendar_picker_friday">Пн</string>
+    <string name="string_calendar_picker_monday">Вт</string>
+    <string name="string_calendar_picker_saturday">Ср</string>
+    <string name="string_calendar_picker_sunday">Чт</string>
+    <string name="string_calendar_picker_thursday">Пт</string>
+    <string name="string_calendar_picker_tuesday">Сб</string>
+    <string name="string_calendar_picker_wednesday">Вс</string>
+
+</resources>

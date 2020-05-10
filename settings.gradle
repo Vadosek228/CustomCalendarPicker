@@ -1,0 +1,3 @@
+rootProject.name='DesignerCalendarPicker'
+include ':app'
+include ':designercalendarpicker'
