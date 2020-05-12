@@ -1,7 +1,12 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.jfrog.bintray'
+
+group='edmt.dev'
+version='1.0.0'
 
 android {
     compileSdkVersion 29
@@ -11,7 +16,7 @@ android {
         minSdkVersion 26
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "1.0.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
@@ -23,6 +28,43 @@ android {
             multiDexEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+
+    task generateSourcesJar(type: Jar) {
+        from android.sourceSets.main.java.srcDirs
+        classifier 'sources'
+    }
+
+    task generateJavadocs(type: Javadoc) {
+        source = android.sourceSets.main.java.srcDirs
+        classpath += project.files(android.getBootClasspath()
+                .join(File.pathSeparator))
+    }
+
+    task generateJavadocsJar(type: Jar) {
+        from generateJavadocs.destinationDir
+        classifier 'javadoc'
+    }
+
+    bintray {
+        user = 'vadson40'
+        key = '6162e63df4069c4f0ee37e758a99628bb3de9d85'
+        pkg {
+            repo = 'maven'
+            name = 'https://github.com/Vadosek228/CustomCalendarPicker'
+
+            version {
+                name = '1.0.0-tuts'
+                desc = 'My test upload'
+                released  = new Date()
+                vcsTag = '1.0.0'
+            }
+
+            licenses = ['Apache-2.0']
+            vcsUrl = 'https://github.com/Vadosek228/CustomCalendarPicker'
+            websiteUrl = 'https://github.com/Vadosek228/CustomCalendarPicker'
+        }
+        configurations = ['archives']
     }
 
 }

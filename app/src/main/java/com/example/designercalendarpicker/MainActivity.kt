@@ -1,9 +1,8 @@
-package com.example.designercalendarpicker_library
+package com.example.designercalendarpicker
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.designercalendarpicker_library.R
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -36,18 +35,18 @@ class MainActivity : AppCompatActivity() {
 ////                LocalDate.of(endLocal.year, endLocal.monthValue, endLocal.dayOfMonth)
 //        }
 
-        piker_reset.setOnClickListener {
-            initCalenderView(startDate.time, endDate.time)
-            piker_actions_container.visibility = View.GONE
-        }
+//        piker_reset.setOnClickListener {
+//            initCalenderView(startDate.time, endDate.time)
+//            piker_actions_container.visibility = View.GONE
+//        }
 
     }
 
     private fun initCalenderView(startDate: Date, endDate: Date) {
-        calendar_view.apply {
-            showDayOfWeekTitle(false)
-            setMode(CalendarPicker.SelectionMode.RANGE)
-            setRangeDate(startDate, endDate)
-        }
+//        calendar_view.apply {
+//            showDayOfWeekTitle(false)
+//            setMode(CalendarPicker.SelectionMode.RANGE)
+//            setRangeDate(startDate, endDate)
+//        }
     }
 }
