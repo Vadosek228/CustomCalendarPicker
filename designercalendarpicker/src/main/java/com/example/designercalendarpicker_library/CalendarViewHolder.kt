@@ -79,7 +79,7 @@ internal class DayViewHolder(view: View) : CalendarViewHolder(view) {
             ContextCompat.getColor(itemView.context, R.color.calendar_picker_between_day)
         } else {
             val color = when (item.state) {
-                DateState.DISABLED -> R.color.colorEventCalendar
+                DateState.DISABLED -> R.color.calendar_picker_disable_day
 //                DateState.WEEKEND -> R.color.calendar_day_weekend_font // todo если пондобится
                 else -> R.color.colorTextMain
             }

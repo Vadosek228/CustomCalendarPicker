@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     private fun setUpCalendar() {
         val startDate = Calendar.getInstance(TimeZone.getDefault(), Locale("ru"))
         val endDate = Calendar.getInstance(TimeZone.getDefault(), Locale("ru"))
-        startDate.add(Calendar.YEAR, -1)
+        startDate.add(Calendar.YEAR, -10)
 
         initCalenderView(startDate.time, endDate.time)
 
